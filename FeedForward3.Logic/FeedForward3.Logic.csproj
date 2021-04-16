@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\FeedForward3.Factories\FeedForward3.Factories.csproj" />
+    <ProjectReference Include="..\FeedForward3.Interfaces\FeedForward3.Interfaces.csproj" />
+    <ProjectReference Include="..\FeedForward3.Models\FeedForward3.Models.csproj" />
+  </ItemGroup>
+
+</Project>

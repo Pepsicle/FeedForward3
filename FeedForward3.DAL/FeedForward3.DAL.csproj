@@ -1,0 +1,16 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MySql.Data" Version="8.0.23" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\FeedForward3.Interfaces\FeedForward3.Interfaces.csproj" />
+    <ProjectReference Include="..\FeedForward3.Models\FeedForward3.Models.csproj" />
+  </ItemGroup>
+
+</Project>

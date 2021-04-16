@@ -1,0 +1,9 @@
+C:\xampp\htdocs\FeedForward3\FeedForward3.Models\bin\Debug\netcoreapp3.1\FeedForward3.Models.deps.json
+C:\xampp\htdocs\FeedForward3\FeedForward3.Models\bin\Debug\netcoreapp3.1\FeedForward3.Models.dll
+C:\xampp\htdocs\FeedForward3\FeedForward3.Models\bin\Debug\netcoreapp3.1\FeedForward3.Models.pdb
+C:\xampp\htdocs\FeedForward3\FeedForward3.Models\obj\Debug\netcoreapp3.1\FeedForward3.Models.csprojAssemblyReference.cache
+C:\xampp\htdocs\FeedForward3\FeedForward3.Models\obj\Debug\netcoreapp3.1\FeedForward3.Models.csproj.CoreCompileInputs.cache
+C:\xampp\htdocs\FeedForward3\FeedForward3.Models\obj\Debug\netcoreapp3.1\FeedForward3.Models.AssemblyInfoInputs.cache
+C:\xampp\htdocs\FeedForward3\FeedForward3.Models\obj\Debug\netcoreapp3.1\FeedForward3.Models.AssemblyInfo.cs
+C:\xampp\htdocs\FeedForward3\FeedForward3.Models\obj\Debug\netcoreapp3.1\FeedForward3.Models.dll
+C:\xampp\htdocs\FeedForward3\FeedForward3.Models\obj\Debug\netcoreapp3.1\FeedForward3.Models.pdb

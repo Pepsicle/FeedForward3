@@ -1,0 +1,14 @@
+C:\xampp\htdocs\FeedForward3\FeedForward3.Logic\bin\Debug\netcoreapp3.1\FeedForward3.Logic.deps.json
+C:\xampp\htdocs\FeedForward3\FeedForward3.Logic\bin\Debug\netcoreapp3.1\FeedForward3.Logic.dll
+C:\xampp\htdocs\FeedForward3\FeedForward3.Logic\bin\Debug\netcoreapp3.1\FeedForward3.Logic.pdb
+C:\xampp\htdocs\FeedForward3\FeedForward3.Logic\bin\Debug\netcoreapp3.1\FeedForward3.DAL.dll
+C:\xampp\htdocs\FeedForward3\FeedForward3.Logic\bin\Debug\netcoreapp3.1\FeedForward3.Models.dll
+C:\xampp\htdocs\FeedForward3\FeedForward3.Logic\bin\Debug\netcoreapp3.1\FeedForward3.DAL.pdb
+C:\xampp\htdocs\FeedForward3\FeedForward3.Logic\bin\Debug\netcoreapp3.1\FeedForward3.Models.pdb
+C:\xampp\htdocs\FeedForward3\FeedForward3.Logic\obj\Debug\netcoreapp3.1\FeedForward3.Logic.csprojAssemblyReference.cache
+C:\xampp\htdocs\FeedForward3\FeedForward3.Logic\obj\Debug\netcoreapp3.1\FeedForward3.Logic.csproj.CoreCompileInputs.cache
+C:\xampp\htdocs\FeedForward3\FeedForward3.Logic\obj\Debug\netcoreapp3.1\FeedForward3.Logic.AssemblyInfoInputs.cache
+C:\xampp\htdocs\FeedForward3\FeedForward3.Logic\obj\Debug\netcoreapp3.1\FeedForward3.Logic.AssemblyInfo.cs
+C:\xampp\htdocs\FeedForward3\FeedForward3.Logic\obj\Debug\netcoreapp3.1\FeedForward3.Logic.csproj.CopyComplete
+C:\xampp\htdocs\FeedForward3\FeedForward3.Logic\obj\Debug\netcoreapp3.1\FeedForward3.Logic.dll
+C:\xampp\htdocs\FeedForward3\FeedForward3.Logic\obj\Debug\netcoreapp3.1\FeedForward3.Logic.pdb
