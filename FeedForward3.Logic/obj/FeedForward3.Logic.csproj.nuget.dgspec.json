@@ -153,7 +153,11 @@
         },
         "frameworks": {
           "netcoreapp3.1": {
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\xampp\\htdocs\\FeedForward3\\FeedForward3.Models\\FeedForward3.Models.csproj": {
+                "projectPath": "C:\\xampp\\htdocs\\FeedForward3\\FeedForward3.Models\\FeedForward3.Models.csproj"
+              }
+            }
           }
         },
         "warningProperties": {

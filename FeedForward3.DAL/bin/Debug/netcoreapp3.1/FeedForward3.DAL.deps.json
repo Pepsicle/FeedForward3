@@ -8,6 +8,7 @@
     ".NETCoreApp,Version=v3.1": {
       "FeedForward3.DAL/1.0.0": {
         "dependencies": {
+          "FeedForward3.Interfaces": "1.0.0",
           "FeedForward3.Models": "1.0.0",
           "MySql.Data": "8.0.23"
         },
@@ -233,6 +234,14 @@
           }
         }
       },
+      "FeedForward3.Interfaces/1.0.0": {
+        "dependencies": {
+          "FeedForward3.Models": "1.0.0"
+        },
+        "runtime": {
+          "FeedForward3.Interfaces.dll": {}
+        }
+      },
       "FeedForward3.Models/1.0.0": {
         "runtime": {
           "FeedForward3.Models.dll": {}
@@ -385,6 +394,11 @@
       "sha512": "sha512-CeWTdRNfRaSh0pm2gDTJFwVaXfTq6Xwv/sA887iwPTneW7oMtMlpvDIO+U60+3GWTB7Aom6oQwv5VZVUhQRdPQ==",
       "path": "system.windows.extensions/4.7.0",
       "hashPath": "system.windows.extensions.4.7.0.nupkg.sha512"
+    },
+    "FeedForward3.Interfaces/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     },
     "FeedForward3.Models/1.0.0": {
       "type": "project",

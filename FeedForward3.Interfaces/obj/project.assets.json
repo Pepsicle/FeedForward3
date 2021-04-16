@@ -1,11 +1,30 @@
 {
   "version": 3,
   "targets": {
-    ".NETCoreApp,Version=v3.1": {}
+    ".NETCoreApp,Version=v3.1": {
+      "FeedForward3.Models/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "compile": {
+          "bin/placeholder/FeedForward3.Models.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/FeedForward3.Models.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "FeedForward3.Models/1.0.0": {
+      "type": "project",
+      "path": "../FeedForward3.Models/FeedForward3.Models.csproj",
+      "msbuildProject": "../FeedForward3.Models/FeedForward3.Models.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    ".NETCoreApp,Version=v3.1": []
+    ".NETCoreApp,Version=v3.1": [
+      "FeedForward3.Models >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\pepij\\.nuget\\packages\\": {}
@@ -32,7 +51,11 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\xampp\\htdocs\\FeedForward3\\FeedForward3.Models\\FeedForward3.Models.csproj": {
+              "projectPath": "C:\\xampp\\htdocs\\FeedForward3\\FeedForward3.Models\\FeedForward3.Models.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

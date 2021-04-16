@@ -3,10 +3,11 @@ using System.Collections.Generic;
 using System.Text;
 using MySql.Data.MySqlClient;
 using FeedForward3.Models;
+using FeedForward3.Interfaces;
 
 namespace FeedForward3.DAL.Repositories
 {
-    public class BetaRepository 
+    public class BetaRepository : IBetaLogic
     {
         MySqlDataReader reader;
         MySqlConnection databaseConnection = DbConn.connection();

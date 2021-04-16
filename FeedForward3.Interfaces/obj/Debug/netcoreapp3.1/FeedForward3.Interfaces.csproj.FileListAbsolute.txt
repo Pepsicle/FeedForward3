@@ -1,0 +1,12 @@
+C:\xampp\htdocs\FeedForward3\FeedForward3.Interfaces\bin\Debug\netcoreapp3.1\FeedForward3.Interfaces.deps.json
+C:\xampp\htdocs\FeedForward3\FeedForward3.Interfaces\bin\Debug\netcoreapp3.1\FeedForward3.Interfaces.dll
+C:\xampp\htdocs\FeedForward3\FeedForward3.Interfaces\bin\Debug\netcoreapp3.1\FeedForward3.Interfaces.pdb
+C:\xampp\htdocs\FeedForward3\FeedForward3.Interfaces\bin\Debug\netcoreapp3.1\FeedForward3.Models.dll
+C:\xampp\htdocs\FeedForward3\FeedForward3.Interfaces\bin\Debug\netcoreapp3.1\FeedForward3.Models.pdb
+C:\xampp\htdocs\FeedForward3\FeedForward3.Interfaces\obj\Debug\netcoreapp3.1\FeedForward3.Interfaces.csprojAssemblyReference.cache
+C:\xampp\htdocs\FeedForward3\FeedForward3.Interfaces\obj\Debug\netcoreapp3.1\FeedForward3.Interfaces.csproj.CoreCompileInputs.cache
+C:\xampp\htdocs\FeedForward3\FeedForward3.Interfaces\obj\Debug\netcoreapp3.1\FeedForward3.Interfaces.AssemblyInfoInputs.cache
+C:\xampp\htdocs\FeedForward3\FeedForward3.Interfaces\obj\Debug\netcoreapp3.1\FeedForward3.Interfaces.AssemblyInfo.cs
+C:\xampp\htdocs\FeedForward3\FeedForward3.Interfaces\obj\Debug\netcoreapp3.1\FeedForward3.Interfaces.csproj.CopyComplete
+C:\xampp\htdocs\FeedForward3\FeedForward3.Interfaces\obj\Debug\netcoreapp3.1\FeedForward3.Interfaces.dll
+C:\xampp\htdocs\FeedForward3\FeedForward3.Interfaces\obj\Debug\netcoreapp3.1\FeedForward3.Interfaces.pdb
