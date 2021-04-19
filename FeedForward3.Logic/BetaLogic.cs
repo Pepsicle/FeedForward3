@@ -17,10 +17,7 @@ namespace FeedForward3.Logic
         {
             _BetaLogic = BetaLogicFactory.betaList();
         }
-        public BetaListModel betaList()
-        {
-            return _BetaLogic.betaList();
-        }
+
         public BetaListModel GetBetaList()
         {
             return betaRepository.betaList();
