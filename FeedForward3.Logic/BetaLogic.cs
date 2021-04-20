@@ -22,5 +22,11 @@ namespace FeedForward3.Logic
         {
             return betaRepository.betaList();
         }
+
+        public bool UploadBeta(BetaModel betaModel)
+        {
+            betaRepository.UploadBeta(betaModel);
+            return true;
+        }
     }
 }

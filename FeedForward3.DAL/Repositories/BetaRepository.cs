@@ -32,5 +32,18 @@ namespace FeedForward3.DAL.Repositories
             }
             return betaList;
         }
+
+        public bool UploadBeta(BetaModel betaModel)
+        {
+            string query = "INSERT INTO betas (title, description, company) VALUES (@Title, @Description, @CompanyName);";
+            MySqlCommand command = new MySqlCommand(query, databaseConnection);
+            databaseConnection.Open();
+            command.Parameters.AddWithValue("@Title", betaModel.Title);
+            command.Parameters.AddWithValue("@Description", betaModel.Description);
+            command.Parameters.AddWithValue("@CompanyName", betaModel.CompanyName);
+
+            command.ExecuteNonQuery();
+            return true;
+        }
     }
 }

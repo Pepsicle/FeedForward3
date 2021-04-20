@@ -8,5 +8,6 @@ namespace FeedForward3.Interfaces
     public interface IBetaLogic
     {
         BetaListModel betaList();
+        bool UploadBeta(BetaModel betaModel);
     }
 }
