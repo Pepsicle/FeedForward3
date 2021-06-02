@@ -33,7 +33,7 @@ namespace FeedForward3.DAL.Repositories
             return betaList;
         }
 
-        public bool UploadBeta(BetaModel betaModel)
+        public bool UploadBeta(BetaModel betaModel) 
         {
             string query = "INSERT INTO betas (title, description, company) VALUES (@Title, @Description, @CompanyName);";
             MySqlCommand command = new MySqlCommand(query, databaseConnection);

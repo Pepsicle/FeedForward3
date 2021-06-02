@@ -19,5 +19,8 @@ namespace FeedForward3.Models
             Description = description;
             CompanyName = companyName;
         }
+        public BetaModel() : this(0, "null", "null", "null")
+        {
+        }
     }
 }
