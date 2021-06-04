@@ -5,10 +5,8 @@ using FeedForward3.Models;
 
 namespace FeedForward3.Interfaces
 {
-    public interface IBetaLogic
+    public interface IFeedbackLogic
     {
-        BetaListModel betaList();
-        bool UploadBeta(BetaModel betaModel);
-        bool RemoveBeta(int id);
+        bool UploadFeedback(FeedbackModel feedbackModel);
     }
 }

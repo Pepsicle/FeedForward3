@@ -11,21 +11,27 @@ namespace FeedForward3.Logic
 {
     public class BetaLogic
     {
-        BetaRepository betaRepository = new BetaRepository();
-        IBetaLogic _BetaLogic;
+        //private BetaRepository betaRepository = new BetaRepository();
+        private IBetaLogic _betaLogic;
         public BetaLogic()
         {
-            _BetaLogic = BetaLogicFactory.betaList();
+            _betaLogic = BetaLogicFactory.betaList();
         }
 
         public BetaListModel GetBetaList()
         {
-            return betaRepository.betaList();
+            return _betaLogic.betaList();
         }
 
         public bool UploadBeta(BetaModel betaModel) //wat als er niks is ingevuld
         {
-            betaRepository.UploadBeta(betaModel);
+            _betaLogic.UploadBeta(betaModel);
+            return true;
+        }
+
+        public bool RemoveBeta(int id)
+        {
+            _betaLogic.RemoveBeta(id);
             return true;
         }
     }
