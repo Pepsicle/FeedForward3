@@ -9,6 +9,7 @@ namespace FeedForward3.Interfaces
     {
         bool UploadFeedback(FeedbackModel feedbackModel);
         int GetVisits(int id);
-        void AddVisit(int id);
+        void Upvote(int id);
+        void Downvote(int id);
     }
 }

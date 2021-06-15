@@ -30,7 +30,6 @@ namespace FeedForward3.DAL.Repositories
         {
             string query = "SELECT * FROM betas WHERE id=@Id;";
             MySqlCommand command = new MySqlCommand(query, databaseConnection);
-            //databaseConnection.Open();
             command.Parameters.AddWithValue("@Id", id);
             reader = command.ExecuteReader();
             int visits = 0;
@@ -41,13 +40,23 @@ namespace FeedForward3.DAL.Repositories
             return visits;
         }
 
-        public void AddVisit(int id)
+        public void Upvote(int id)
         {
             string query = "UPDATE betas SET visits = visits + 1 WHERE id = @Id";
             MySqlCommand command = new MySqlCommand(query, databaseConnection);
-            //databaseConnection.Open();
+            databaseConnection.Open();
             command.Parameters.AddWithValue("@Id", id);
             command.ExecuteNonQuery();
+            databaseConnection.Close();
+        }
+        public void Downvote(int id)
+        {
+            string query = "UPDATE betas SET visits = visits - 1 WHERE id = @Id";
+            MySqlCommand command = new MySqlCommand(query, databaseConnection);
+            databaseConnection.Open();
+            command.Parameters.AddWithValue("@Id", id);
+            command.ExecuteNonQuery();
+            databaseConnection.Close();
         }
     }
 }

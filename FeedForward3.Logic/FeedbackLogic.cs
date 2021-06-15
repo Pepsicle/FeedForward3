@@ -9,32 +9,26 @@ namespace FeedForward3.Logic
 {
     public class FeedbackLogic
     {
-        //private BetaRepository betaRepository = new BetaRepository();
         private IFeedbackLogic _feedbackLogic;
         public FeedbackLogic()
         {
             _feedbackLogic = FeedbackLogicFactory.UploadFeedback();
         }
 
-        //public BetaListModel GetBetaList()
-        //{
-        //    return _betaLogic.betaList();
-        //}
 
         public bool UploadFeedback(FeedbackModel feedbackModel) //wat als er niks is ingevuld
         {
             _feedbackLogic.UploadFeedback(feedbackModel);
-            _feedbackLogic.AddVisit(feedbackModel.TestId);
-            //AddVisit(feedbackModel.TestId);
             return true;
         }
 
-        private void AddVisit(int id)
+        public void Upvote(int id)
         {
-            int visits = _feedbackLogic.GetVisits(id);
-            visits++;
-
-
+            _feedbackLogic.Upvote(id);
+        }
+        public void Downvote(int id)
+        {
+            _feedbackLogic.Downvote(id);
         }
     }
 }
