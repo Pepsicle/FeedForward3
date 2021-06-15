@@ -25,7 +25,7 @@ namespace FeedForward3.DAL.Repositories
             {
                 while (reader.Read())
                 {
-                    BetaModel beta = new BetaModel(reader.GetInt32("id"), reader.GetString("title"), reader.GetString("description"), reader.GetString("company"));
+                    BetaModel beta = new BetaModel(reader.GetInt32("id"), reader.GetString("title"), reader.GetString("description"), reader.GetString("company"), reader.GetInt32("visits"));
                     betaList.AddBeta(beta);
                 }
                 reader.Close();
@@ -41,6 +41,7 @@ namespace FeedForward3.DAL.Repositories
             command.Parameters.AddWithValue("@Title", betaModel.Title);
             command.Parameters.AddWithValue("@Description", betaModel.Description);
             command.Parameters.AddWithValue("@CompanyName", betaModel.CompanyName);
+            command.Parameters.AddWithValue("@Visits", betaModel.Visits);
 
             command.ExecuteNonQuery();
             return true;

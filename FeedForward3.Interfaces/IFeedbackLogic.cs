@@ -8,5 +8,7 @@ namespace FeedForward3.Interfaces
     public interface IFeedbackLogic
     {
         bool UploadFeedback(FeedbackModel feedbackModel);
+        int GetVisits(int id);
+        void AddVisit(int id);
     }
 }

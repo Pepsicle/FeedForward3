@@ -24,7 +24,17 @@ namespace FeedForward3.Logic
         public bool UploadFeedback(FeedbackModel feedbackModel) //wat als er niks is ingevuld
         {
             _feedbackLogic.UploadFeedback(feedbackModel);
+            _feedbackLogic.AddVisit(feedbackModel.TestId);
+            //AddVisit(feedbackModel.TestId);
             return true;
+        }
+
+        private void AddVisit(int id)
+        {
+            int visits = _feedbackLogic.GetVisits(id);
+            visits++;
+
+
         }
     }
 }

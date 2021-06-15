@@ -26,38 +26,28 @@ namespace FeedForward3.DAL.Repositories
             return true;
         }
 
-        public BetaListModel betaList()
+        public int GetVisits(int id)
         {
-            string query = "SELECT * FROM betas";
+            string query = "SELECT * FROM betas WHERE id=@Id;";
             MySqlCommand command = new MySqlCommand(query, databaseConnection);
-            databaseConnection.Open();
-            BetaListModel betaList = new BetaListModel();
-
+            //databaseConnection.Open();
+            command.Parameters.AddWithValue("@Id", id);
             reader = command.ExecuteReader();
-
-            if (reader.HasRows)
+            int visits = 0;
+            while (reader.Read())
             {
-                while (reader.Read())
-                {
-                    BetaModel beta = new BetaModel(reader.GetInt32("id"), reader.GetString("title"), reader.GetString("description"), reader.GetString("company"));
-                    betaList.AddBeta(beta);
-                }
-                reader.Close();
+                visits = reader.GetInt32("visits");
             }
-            return betaList;
+            return visits;
         }
 
-        public bool UploadBeta(BetaModel betaModel)
+        public void AddVisit(int id)
         {
-            string query = "INSERT INTO betas (title, description, company) VALUES (@Title, @Description, @CompanyName);";
+            string query = "UPDATE betas SET visits = visits + 1 WHERE id = @Id";
             MySqlCommand command = new MySqlCommand(query, databaseConnection);
-            databaseConnection.Open();
-            command.Parameters.AddWithValue("@Title", betaModel.Title);
-            command.Parameters.AddWithValue("@Description", betaModel.Description);
-            command.Parameters.AddWithValue("@CompanyName", betaModel.CompanyName);
-
+            //databaseConnection.Open();
+            command.Parameters.AddWithValue("@Id", id);
             command.ExecuteNonQuery();
-            return true;
         }
     }
 }

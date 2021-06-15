@@ -11,15 +11,17 @@ namespace FeedForward3.Models
         public string Title { get; set; }
         public string Description { get; set; }
         public string CompanyName { get; set; }
+        public int Visits { get; set; }
 
-        public BetaModel(int id, string title, string description, string companyName)
+        public BetaModel(int id, string title, string description, string companyName, int visits)
         {
             Id = id;
             Title = title;
             Description = description;
             CompanyName = companyName;
+            Visits = visits;
         }
-        public BetaModel() : this(0, "null", "null", "null")
+        public BetaModel() : this(0, "null", "null", "null", 0)
         {
         }
     }
