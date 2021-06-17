@@ -25,28 +25,31 @@ namespace FeedForward3.DAL.Repositories
             {
                 while (reader.Read())
                 {
-                    BetaModel beta = new BetaModel(reader.GetInt32("id"), reader.GetString("title"), reader.GetString("description"), reader.GetString("company"), reader.GetInt32("visits"));
+                    BetaModel beta = new BetaModel(reader.GetInt32("id"), reader.GetString("title"), reader.GetString("description"), reader.GetString("company"), reader.GetInt32("visits"), reader.GetInt32("price"));
                     betaList.AddBeta(beta);
                 }
                 reader.Close();
             }
+            databaseConnection.Close();
             return betaList;
         }
 
         public bool UploadBeta(BetaModel betaModel) 
         {
-            string query = "INSERT INTO betas (title, description, company) VALUES (@Title, @Description, @CompanyName);";
+            string query = "INSERT INTO betas (title, description, company, visits, price) VALUES (@Title, @Description, @CompanyName, @Visits, @Price);";
             MySqlCommand command = new MySqlCommand(query, databaseConnection);
             databaseConnection.Open();
             command.Parameters.AddWithValue("@Title", betaModel.Title);
             command.Parameters.AddWithValue("@Description", betaModel.Description);
             command.Parameters.AddWithValue("@CompanyName", betaModel.CompanyName);
-            command.Parameters.AddWithValue("@Visits", betaModel.Visits);
+            command.Parameters.AddWithValue("@Visits", 0);
+            command.Parameters.AddWithValue("@Price", betaModel.Price);
 
             command.ExecuteNonQuery();
+            databaseConnection.Close();
             return true;
         }
-
+        
         public bool RemoveBeta(int id)
         {
             string query = "DELETE FROM betas WHERE id=@Id;";
@@ -56,6 +59,7 @@ namespace FeedForward3.DAL.Repositories
 
             command.ExecuteNonQuery();
 
+            databaseConnection.Close();
             return true;
         }
     }

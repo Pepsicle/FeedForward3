@@ -49,6 +49,7 @@ namespace FeedForward3.DAL.Repositories
             command.ExecuteNonQuery();
             databaseConnection.Close();
         }
+
         public void Downvote(int id)
         {
             string query = "UPDATE betas SET visits = visits - 1 WHERE id = @Id";
